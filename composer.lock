@@ -4,30 +4,31 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "9d709566b9766e8acafbfc90f5d2dbae",
-    "content-hash": "904d83847e2d8804e3ed2bd7144c1649",
+    "hash": "a1112e0dff3cdf73014d5f83141c6c0b",
+    "content-hash": "f5383dd82c3904cea1af8e1b85b6136c",
     "packages": [
         {
-            "name": "shampeak/wise",
+            "name": "shampeak/db",
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/shampeak/wise.git",
-                "reference": "a51481efbc411c0c3df926a27085e9cb4d9b6cc3"
+                "url": "https://github.com/shampeak/db.git",
+                "reference": "01b217e079eacedb873ea30b4de4261ff681dd14"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/shampeak/wise/zipball/a51481efbc411c0c3df926a27085e9cb4d9b6cc3",
-                "reference": "a51481efbc411c0c3df926a27085e9cb4d9b6cc3",
+                "url": "https://api.github.com/repos/shampeak/db/zipball/01b217e079eacedb873ea30b4de4261ff681dd14",
+                "reference": "01b217e079eacedb873ea30b4de4261ff681dd14",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.4.9"
+                "php": ">=5.4.9",
+                "shampeak/wise": "dev-master"
             },
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "Sham\\Wise\\": "src"
+                    "Sham\\db\\": "src"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -41,19 +42,56 @@
                 }
             ],
             "description": "dev",
-            "time": "2015-11-10 07:07:25"
+            "time": "2015-11-16 09:43:14"
+        },
+        {
+            "name": "shampeak/wise",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/shampeak/wise.git",
+                "reference": "708aae06feab350cf231e57db52c58267d1bb9e6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/shampeak/wise/zipball/708aae06feab350cf231e57db52c58267d1bb9e6",
+                "reference": "708aae06feab350cf231e57db52c58267d1bb9e6",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.9"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Sham\\wise\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "shampeak",
+                    "email": "shampeak@sina.com.cn"
+                }
+            ],
+            "description": "dev",
+            "time": "2015-11-16 09:42:33"
         }
     ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "shampeak/wise": 20
+        "shampeak/wise": 20,
+        "shampeak/db": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
-        "php": ">=5.4.9"
+        "php": ">=5.5.9"
     },
     "platform-dev": []
 }

@@ -1,23 +1,31 @@
 {
-    "name": "shampeak/db",
-    "description": "dev",
-    "type": "library",
+    "name": "meta/silk",
+    "description": "another e-commerce website",
+    "keywords": [
+        "silk",
+        "online shop",
+        "good"
+    ],
+    "time": "2014-12-30",
     "license": "MIT",
     "authors": [
         {
-            "name": "shampeak",
-            "email": "shampeak@sina.com.cn"
+            "name": "Sham",
+            "email": "shampeak@sina.com",
+            "homepage": "http://www.Gracephp.com",
+            "role": "Engineer"
         }
     ],
     "require": {
-        "php" : ">=5.4.9",
-        "shampeak/wise": "dev-master"
+        "php" : ">=5.5.9",
+        "shampeak/wise": "dev-master",
+        "shampeak/db": "dev-master"
     },
     "require-dev": {
     },
     "autoload":{
         "psr-4":{
-            "Sham\\db\\": "src"
+            "Sham\\geter\\": "src"
         }
     }
 }
