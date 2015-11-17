@@ -18,6 +18,7 @@
     ],
     "require": {
         "php" : ">=5.5.9",
+        "shampeak/base": "dev-master",
         "shampeak/wise": "dev-master",
         "shampeak/db": "dev-master"
     },
@@ -25,7 +26,16 @@
     },
     "autoload":{
         "psr-4":{
-            "Sham\\geter\\": "src"
+            "Sham\\geter\\": "src",
+            "App\\": "App"
         }
-    }
+    },
+    "repositories": [
+        {
+            "type": "composer", "url": "http://packagist.phpcomposer.com"
+        },
+        {
+            "packagist": false
+        }
+    ]
 }

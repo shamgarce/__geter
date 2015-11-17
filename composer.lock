@@ -4,21 +4,57 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "a1112e0dff3cdf73014d5f83141c6c0b",
-    "content-hash": "f5383dd82c3904cea1af8e1b85b6136c",
+    "hash": "f0534a69c81030ad923f05b6dade1383",
+    "content-hash": "b51987ea76268a9a761cca3a8ce8a511",
     "packages": [
+        {
+            "name": "shampeak/base",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/shampeak/base.git",
+                "reference": "74b2862e5c1e5bb1f9df7914d1e67fdc7b3664ca"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/shampeak/base/zipball/74b2862e5c1e5bb1f9df7914d1e67fdc7b3664ca",
+                "reference": "74b2862e5c1e5bb1f9df7914d1e67fdc7b3664ca",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.9"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Sham\\base\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "shampeak",
+                    "email": "shampeak@sina.com.cn"
+                }
+            ],
+            "description": "dev",
+            "time": "2015-11-17 07:19:02"
+        },
         {
             "name": "shampeak/db",
             "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/shampeak/db.git",
-                "reference": "01b217e079eacedb873ea30b4de4261ff681dd14"
+                "reference": "91d5e4d60a88de0a9de7ee0e20b946c7e8538f8f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/shampeak/db/zipball/01b217e079eacedb873ea30b4de4261ff681dd14",
-                "reference": "01b217e079eacedb873ea30b4de4261ff681dd14",
+                "url": "https://api.github.com/repos/shampeak/db/zipball/91d5e4d60a88de0a9de7ee0e20b946c7e8538f8f",
+                "reference": "91d5e4d60a88de0a9de7ee0e20b946c7e8538f8f",
                 "shasum": ""
             },
             "require": {
@@ -42,7 +78,7 @@
                 }
             ],
             "description": "dev",
-            "time": "2015-11-16 09:43:14"
+            "time": "2015-11-17 03:19:49"
         },
         {
             "name": "shampeak/wise",
@@ -50,20 +86,22 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/shampeak/wise.git",
-                "reference": "708aae06feab350cf231e57db52c58267d1bb9e6"
+                "reference": "00ee9d58739b76a3eb7c218b4c39ef05f3919ddb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/shampeak/wise/zipball/708aae06feab350cf231e57db52c58267d1bb9e6",
-                "reference": "708aae06feab350cf231e57db52c58267d1bb9e6",
+                "url": "https://api.github.com/repos/shampeak/wise/zipball/00ee9d58739b76a3eb7c218b4c39ef05f3919ddb",
+                "reference": "00ee9d58739b76a3eb7c218b4c39ef05f3919ddb",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.4.9"
+                "php": ">=5.4.9",
+                "shampeak/base": "dev-master"
             },
             "type": "library",
             "autoload": {
                 "psr-4": {
+                    "App\\": "App",
                     "Sham\\wise\\": "src"
                 }
             },
@@ -78,13 +116,14 @@
                 }
             ],
             "description": "dev",
-            "time": "2015-11-16 09:42:33"
+            "time": "2015-11-17 07:31:12"
         }
     ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
+        "shampeak/base": 20,
         "shampeak/wise": 20,
         "shampeak/db": 20
     },
